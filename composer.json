@@ -1,0 +1,40 @@
+{
+  "name": "nancheng/pfinal-framework",
+  "description": "PFinal Framework (Kernel)",
+  "authors": [
+    {
+      "name": "南丞",
+      "email": "Lampxiezi@163.com",
+      "homepage": "http://friday-go.cc/"
+    }
+  ],
+  "homepage": "https://github.com/pfinalclub/pfinal-framework",
+  "license": "MIT",
+  "keywords": [
+    "pfinal",
+    "pfinal社区",
+    "PFinalClub",
+    "南丞",
+    "Q哥",
+    "php-framework",
+    "framework",
+    "pfinal-framework"
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "pf\\framework\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.2"
+  }
+}
