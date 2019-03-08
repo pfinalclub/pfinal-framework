@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: 南丞
- * Date: 2019/3/4
- * Time: 14:35
+ * Date: 2019/3/8
+ * Time: 11:34
  *
  *
  *                      _ooOoo_
@@ -29,26 +29,6 @@
  *
  */
 
-namespace pf\framework\build;
+require '../../vendor/autoload.php';
 
-class Base
-{
-    public function bootstrap()
-    {
-        $this->services();
-        spl_autoload_register([$this, 'autoload']);
-
-
-    }
-
-    public function services()
-    {
-        defined('ROOT_PATH') or define('ROOT_PATH', '');
-        //TODO 加载服务配置项
-    }
-
-    public function autoload($class)
-    {
-        
-    }
-}
+\pf\framework\App::bootstrap();
